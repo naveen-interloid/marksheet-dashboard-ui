@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <header>
+        <div class="header-board">
+          <div class="pri-head">
+            <p>Sri Vidya Matriculation School</p>
+            <h1>Class 10-B quarterly results</h1>
+          </div>
+
+          <p><span>71%</span> "passed"</p>
+        </div>
+      </header>
+
+      <main>
+        <div class="main-wrapper">
+          <section class="summary">
+            <div class="card">
+              <p class="sum-label">Students</p>
+              <p class="sum-value">7</p>
+            </div>
+            <div class="card">
+              <p class="sum-label">Class average</p>
+              <p class="sum-value">69</p>
+            </div>
+            <div class="card">
+              <p class="sum-label">Passed</p>
+              <p class="sum-value">5</p>
+            </div>
+            <div class="card">
+              <p class="sum-label">Failed</p>
+              <p class="sum-value">2</p>
+            </div>
+          </section>
+
+          <section class="table-wrapper">
+            <h2>Register</h2>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Roll</th>
+                  <th>Name</th>
+                  <th>Maths</th>
+                  <th>Science</th>
+                  <th>English</th>
+                  <th>Total</th>
+                  <th>Grade</th>
+                  <th>Result</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td id="student-name">Naveen</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td id="student-name">300</td>
+                  <td><span class="grade">A+</span></td>
+                  <td><span class="pass">Pass</span></td>
+                  <td><button class="remove">Remove</button></td>
+                </tr>
+
+                <tr>
+                  <td>1</td>
+                  <td id="student-name">Naveen</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td id="student-name">300</td>
+                  <td><span class="grade">A+</span></td>
+                  <td><span class="pass">Pass</span></td>
+                  <td><button class="remove">Remove</button></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="table-model">
+              <div class="table-tr">
+                <h3>Roll no. 1</h3>
+              </div>
+              <div class="table-tr">
+                <h3 id="student-name">Aadhya R</h3>
+              </div>
+              <div class="table-tr">
+                <h3>Maths</h3>
+                <p>92</p>
+              </div>
+              <div class="table-tr">
+                <h3>Science</h3>
+                <p>88</p>
+              </div>
+              <div class="table-tr">
+                <h3>English</h3>
+                <p>95</p>
+              </div>
+              <div class="table-tr">
+                <h3>Total</h3>
+                <p id="student-name">275</p>
+              </div>
+              <div class="table-tr">
+                <span class="grade">A+</span>
+              </div>
+              <div class="table-tr">
+                <h3>Result</h3>
+                <span class="pass">Pass</span>
+              </div>
+              <div class="table-tr">
+                <button class="remove">Remove</button>
+              </div>
+            </div>
+            <!-- <hr /> -->
+
+            <div class="table-model">
+              <div class="table-tr">
+                <h3>Roll no. 2</h3>
+              </div>
+              <div class="table-tr">
+                <h3 id="student-name">Amal</h3>
+              </div>
+              <div class="table-tr">
+                <h3 id="fail-subject">Maths</h3>
+                <p id="fail-mark">31</p>
+              </div>
+              <div class="table-tr">
+                <h3>Science</h3>
+                <p>88</p>
+              </div>
+              <div class="table-tr">
+                <h3>English</h3>
+                <p>95</p>
+              </div>
+              <div class="table-tr">
+                <h3>Total</h3>
+                <p id="student-name">275</p>
+              </div>
+              <div class="table-tr">
+                <!-- <h3>Grade</h3> -->
+                <span class="grade">F</span>
+              </div>
+              <div class="table-tr">
+                <h3>Result</h3>
+                <span class="fail">Fail</span>
+              </div>
+              <div class="table-tr">
+                <button class="remove">Remove</button>
+              </div>
+            </div>
+            <!-- <hr /> -->
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

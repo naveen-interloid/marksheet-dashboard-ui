@@ -133,6 +133,8 @@ header span {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(220, 219, 219);
 }
 
 .table-tr:first-child {
@@ -151,16 +153,18 @@ header span {
 }
 
 .table-tr:nth-child(7) {
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 10px;
   right: 10px;
   transform: rotate(-8deg);
 }
 
-#student-name {
-  font-size: 16px;
-  font-weight: bolder;
-  color: #000;
+.student-name {
+  font-size: 16px !important;
+  font-weight: bolder !important;
+  color: #000 !important;
 }
 
 .grade {
@@ -177,7 +181,7 @@ header span {
   color: #247b4e;
   padding: 3px 10px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 900;
 }
 
@@ -186,17 +190,17 @@ header span {
   color: var(--redpen);
   padding: 3px 10px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 900;
 }
 
-#fail-subject {
+.fail-subject {
   font-weight: 700;
   text-decoration: underline wavy;
   text-decoration-color: #d7263d;
 }
 
-#fail-mark {
+.fail-mark {
   font-weight: 700;
   color: var(--redpen);
   text-decoration: underline wavy;
@@ -212,11 +216,6 @@ header span {
 
 .table-tr:nth-child(9) {
   text-align: right;
-}
-
-hr {
-  opacity: 0.3;
-  color: var(--rule);
 }
 
 table {
@@ -251,7 +250,8 @@ table {
     font-size: 14px;
     font-weight: 700;
     color: var(--muted);
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #212a26;
   }
 }
 

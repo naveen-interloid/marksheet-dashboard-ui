@@ -28,7 +28,6 @@ body {
 
 main {
   width: 100%;
-  height: 100%;
   position: relative;
 }
 
@@ -59,12 +58,17 @@ header {
   line-height: 40px;
 }
 
+.sec-head {
+  font-weight: bolder;
+  font-family: var(--hand);
+}
+
 .pri-head h1 {
-  font-size: 26px;
+  font-size: 36px;
 }
 
 header p {
-  font-family: var(--hand);
+  font-family: var(--sans);
   color: #b8ccbf;
 }
 
@@ -82,8 +86,7 @@ header span {
 }
 
 .card {
-  width: 100%;
-  background-color: var(--bg);
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
 }
@@ -121,7 +124,7 @@ header span {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--bg);
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
   gap: 20px;
@@ -153,12 +156,9 @@ header span {
 }
 
 .table-tr:nth-child(7) {
-  width: 50px;
-  height: 50px;
   position: absolute;
   top: 10px;
   right: 10px;
-  transform: rotate(-8deg);
 }
 
 .student-name {
@@ -168,12 +168,18 @@ header span {
 }
 
 .grade {
+  width: 50px;
+  height: 50px;
   padding: 10px;
   border: 2px solid var(--redpen);
   border-radius: 50%;
   color: var(--redpen);
   font-weight: bolder;
   font-family: var(--hand);
+  transform: rotate(-8deg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pass {
@@ -242,7 +248,7 @@ table {
     border-collapse: collapse;
   }
   table td {
-    padding: 24px 10px;
+    padding: 18px 10px;
     border-bottom: 1px solid rgb(220, 219, 219);
   }
 

@@ -9,35 +9,46 @@ let students = [
 ];
 
 const SUBJECTS = ["maths", "science", "english"];
-const SUBJECT_NAMES = { maths: "Maths", science: "Science", english: "English" };
+const SUBJECT_NAMES = {maths: "Maths",science: "Science",english: "English"};
 const PASS_MARK = 35;
 
 
-const tableTr = document.querySelector('.table-tr');
-const tBody = document.querySelector('tbody');
-const Tr = document.querySelector('tr');
-const Td = document.querySelector('td');
+const tBody = document.querySelector("tbody");
+const tableWrapper = document.querySelector(".table-wrapper");
+const passPercentSpan = document.querySelector(".sec-head span");
+const summaryCards = document.querySelectorAll(".summary .card");
 
+function getGrade(average, isPass) {
+  if (!isPass) return "F";
 
-students.forEach(student => {
+  else if (average >= 90) return "A+";
+  else if (average >= 80) return "A";
+  else if (average >= 70) return "B+";
+  else if (average >= 60) return "B";
+  else if (average >= 50) return "C";
 
-  const card = document.createElement("div");
-  card.classList.add("table-model");
+  else return "D";
+}
 
-  const addRow = (label, value) => {
-    const row = document.createElement("div");
-    row.classList.add("table-tr");
+function updateSummary() {
 
-    const h3 = document.createElement("h3");
-    h3.textContent = label;
+  const totalStudents = students.length;
+  let passedCount = 0;
+  let failedCount = 0;
+  let totalMarks = 0;
 
-    const p = document.createElement("p");
-    p.textContent = value;
+  students.forEach((student) => {
 
-    row.append(h3, p);
-    card.append(row);
-  };
+    const isPass = SUBJECTS.every((subject) => student[subject] >= PASS_MARK);
+    if (isPass) {
+      passedCount++;
+    } else {
+      failedCount++;
+    }
 
-});
+    const studentTotal = SUBJECTS.reduce((sum, subject) => sum + student[subject], 0);
+    totalMarks += studentTotal;
+  });
 
+}
 
